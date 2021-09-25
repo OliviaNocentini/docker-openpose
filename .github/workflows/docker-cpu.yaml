@@ -1,4 +1,4 @@
-name: Publish Docker Image [GPU]
+name: Publish Docker Image [CPU]
 
 on: [workflow_dispatch]
 
