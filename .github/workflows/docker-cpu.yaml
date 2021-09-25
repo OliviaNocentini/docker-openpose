@@ -17,5 +17,5 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
         workdir: dockerfiles
         registry: ghcr.io
-	buildargs: GPU_MODE
-	tags: "cpu"
+        buildargs: GPU_MODE
+        tags: "cpu"
