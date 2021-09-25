@@ -53,7 +53,7 @@ RUN mkdir robot-code && \
     sudo pip3 install numpy opencv-python && \
     mkdir build && \
     cd build && \
-    cmake -DBUILD_PYTHON=ON  -DGPU_MODE=${GPU_MODE}.. && \
+    cmake -DBUILD_PYTHON=ON -DGPU_MODE=${GPU_MODE} .. && \
     make -j`nproc` && \
     sudo make install -j`nproc` && \
     sudo rm -rf /var/lib/apt/lists/*
