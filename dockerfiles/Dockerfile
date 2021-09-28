@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.4.2-cudnn8-devel-ubuntu20.04
+FROM nvidia/cuda:11.1.1-cudnn8-devel-ubuntu20.04
 LABEL org.opencontainers.image.title="Openpose Docker Image"
 LABEL org.opencontainers.image.description="Infrastructure for installing Openpose"
 LABEL org.opencontainers.image.source="https://raw.githubusercontent.com/OliviaNocentini/docker-openpose/main/dockerfiles/Dockerfile"
@@ -6,7 +6,7 @@ LABEL org.opencontainers.image.authors="Olivia Nocentini <o.nocentini@gmail.com>
 
 ARG USERNAME=user
 ARG USERID=1000
-ARG OPENPOSE_VERSION=v1.7.0
+ARG OPENPOSE_VERSION=73279060302fde06b4511e4f09676d73aa4423be
 ARG GPU_MODE=CUDA
 SHELL ["/bin/bash", "-c"]
 
